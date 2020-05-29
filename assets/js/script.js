@@ -54,12 +54,12 @@ function fibonacci(x) {
     let t1 = 0;
     let t2 = 1;
     let total = 0;
-    for (let i = 1; i < x - 1; i++) {
+    for (let i = 2; i < x; i++) {
         total = t1 + t2;
         t1 = t2;
         t2 = total;
     }
-    return total;
+    return t2;
 }
 
 // End of Function Lane!
